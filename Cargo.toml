@@ -1,0 +1,16 @@
+[package]
+name = "proc_solar"
+version = "0.1.1"
+edition = "2021"
+authors = ["Javier Valladares", "ChatGPT"]
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+
+[dependencies]
+image = "0.25"
+rayon = "1.10"
+clap = { version = "4.5", features = ["derive"] }
+minifb = "0.25"
